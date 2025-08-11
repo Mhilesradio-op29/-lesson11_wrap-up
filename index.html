@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home | IST Portfolio</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+  <canvas id="matrix-canvas" aria-hidden="true"></canvas>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="./image/french fries.jpg" alt="Site emblem" class="logo">
+        <span class="brand-name">IST Portfolio</span>
+      </a>
+      <nav aria-label="Main">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="mobileMenu" aria-label="Toggle navigation">☰</button>
+        <ul class="nav-list">
+          <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="data.html">Data</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div id="mobileMenu" class="mobile-menu" hidden>
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="about.html">About</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="data.html">Data</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </header>
+  <main id="main" class="container py">
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Welcome</h1>
+        <p>Showcasing networking focus, projects, and interests.</p>
+        <p><a class="btn" href="about.html">Learn more</a></p>
+      </div>
+      <div class="hero-art">
+        <div class="thumb">
+          <img src="./image/darkangels.jpg" alt="Emblem preview" class="page-img">
+        </div>
+      </div>
+    </section>
+    <section class="grid-2 mt">
+      <div class="card">
+        <h2>Highlights</h2>
+        <p>Hands-on labs, protocols, and tooling in IST networking.</p>
+      </div>
+      <div class="card">
+        <h2>What’s Inside</h2>
+        <ul>
+          <li>Gallery of interests</li>
+          <li>Sortable data table</li>
+          <li>Contact form (GET to zyBooks)</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>Contact</h4>
+        <p>Email: <a href="mailto:mph5945@psu.edu">mph5945@psu.edu</a></p>
+      </div>
+      <div>
+        <h4>Site</h4>
+        <ul class="sitemap">
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="data.html">Data</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="text-center small mb-0">&copy; <span id="year"></span> IST Portfolio</p>
+  </footer>
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">▲</button>
+
+  <script src="scripts/scripts.js"></script>
+</body>
+</html>

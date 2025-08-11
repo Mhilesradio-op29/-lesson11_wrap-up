@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data | IST Portfolio</title>
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+  <canvas id="matrix-canvas" aria-hidden="true"></canvas>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="./image/french fries.jpg" alt="IST Portfolio Site Emblem" class="logo">
+        <span class="brand-name">IST Portfolio</span>
+      </a>
+      <nav aria-label="Main navigation">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="Toggle navigation">☰</button>
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="data.html" class="active" aria-current="page">Data</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div id="mobile-menu" class="mobile-menu" hidden>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="data.html" aria-current="page">Data</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </header>
+  <main id="main-content" class="container py">
+    <h1>Data Table</h1>
+    <p>Click a column header to sort the data.</p>
+    
+    <div class="table-responsive">
+      <table>
+        <caption>Sample Metrics</caption>
+        <thead>
+          <tr>
+            <th><button data-sort="category" aria-label="Sort by Category">Category</button></th>
+            <th><button data-sort="items" aria-label="Sort by Items">Items</button></th>
+            <th><button data-sort="avg-score" aria-label="Sort by Average Score">Avg Score</button></th>
+            <th><button data-sort="trend" aria-label="Sort by Trend">Trend</button></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Alpha</td>
+            <td>2486</td>
+            <td>Up</td>
+            <td>4.2</td>
+          </tr>
+          <tr>
+            <td>Beta</td>
+            <td>1275</td>
+            <td>Flat</td>
+            <td>3.8</td>
+          </tr>
+          <tr>
+            <td>Gamma</td>
+            <td>4491</td>
+            <td>Up</td>
+            <td>4.5</td>
+          </tr>
+          <tr>
+            <td>Delta</td>
+            <td>967</td>
+            <td>Down</td>
+            <td>3.1</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="4">Illustrative only.</td>
+            </tr>
+        </tfoot>
+      </table>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>Contact</h4>
+        <address>
+          <p>Email: <a href="mailto:mph5945@psu.edu">mph5945@psu.edu</a></p>
+        </address>
+      </div>
+      <div>
+        <h4>Site</h4>
+        <ul class="sitemap">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="data.html" aria-current="page">Data</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="text-center small mb-0">&copy; <span id="year"></span> IST Portfolio</p>
+  </footer>
+  <button id="back-to-top" class="back-to-top" aria-label="Back to top">▲</button>
+
+  <script src="scripts/scripts.js"></script>
+  <script src="./scripts/scripts.js"></script>
+</body>
+</html>

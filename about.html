@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | IST Portfolio</title>
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/styles.css">
+  
+</head>
+<body>
+  <canvas id="matrix-canvas" aria-hidden="true"></canvas>
+  
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="./image/usmc radio.jpg" alt="IST Portfolio Site Emblem" class="logo">
+        <span class="brand-name">IST Portfolio</span>
+      </a>
+      <nav aria-label="Main navigation">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="Toggle navigation">☰</button>
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" class="active" aria-current="page">About</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="data.html">Data</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div id="mobile-menu" class="mobile-menu" hidden>
+      <a href="index.html">Home</a>
+      <a href="about.html" aria-current="page">About</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="data.html">Data</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </header>
+
+  <main id="main-content" class="container py">
+    <h1>About</h1>
+    <section class="grid-2">
+      <div>
+        <h2>My Background</h2>
+        <p>My name is Mark. I grew up in Pittsburgh, PA and live in Durham, NC. I’m in my 4th semester at PSU, majoring in IST with a networking specialization.</p>
+        <p>I enjoy powerlifting, painting Warhammer 40k minis, walking my dog, and shooting. I am a medically retired US Marine with 8 years of service.</p>
+      </div>
+      <div class="thumb">
+        <img src="./image/usmc radio.jpg" alt="Emblem for the IST Portfolio site" class="page-img">
+        </div>
+    </section>
+  </main>
+  
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>Contact</h4>
+        <address>
+        <p>Email: <a href="mailto:mph5945@psu.edu">mph5945@psu.edu</a></p>
+        </address>
+      </div>
+      <div>
+        <h4>Site</h4>
+        <ul class="sitemap">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" aria-current="page">About</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="data.html">Data</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="text-center small mb-0">&copy; <span id="year"></span> IST Portfolio</p>
+  </footer>
+  
+  <button id="back-to-top" class="back-to-top" aria-label="Back to top">▲</button>
+  <script src="scripts/scripts.js"></script>
+</body>
+</html>
